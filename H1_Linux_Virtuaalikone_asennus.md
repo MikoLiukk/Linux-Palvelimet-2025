@@ -37,20 +37,27 @@ https://www.virtualbox.org/wiki/Downloads
 Nimesin virtuaalikoneen "DebianMikoLiukkonen" 
 Valitsin ladatun ISO kuvan, joka löytyi ladatuista tiedostoista.
 Versioksi valitsin Debian (64-bit)
+![Näyttökuva 2025-01-20 132810](https://github.com/user-attachments/assets/f1a31b28-adc3-43a5-8e5a-24f8c2c050b5)
 
 ### Pääkäyttäjä ja salasana
 Nimesin pääkäyttäjän ja salasanan seuraavasti.
+![Näyttökuva 2025-01-20 132909](https://github.com/user-attachments/assets/77f2e698-295f-4e95-a024-8bd3bc482eb5)
 
 ### Virtuaalinentietokone
 Base Memoryksi laitoin 4096MB ja 4 prosessoria.
 Laitteistolevyn kooksi tuli 62,14GB
+![Näyttökuva 2025-01-20 132928](https://github.com/user-attachments/assets/86b3a09c-df74-44aa-9411-0be655ba407b)
+![Näyttökuva 2025-01-20 132959](https://github.com/user-attachments/assets/37bd21d2-151f-4e13-8102-50d4e4026a4a)
 
 ### Ongelmia asennuksessa
 Kun koitin aloittaa virtuaalikonetta seuraavanlainen virheilmoitus tuli:
+![Näyttökuva 2025-01-20 133036](https://github.com/user-attachments/assets/28d18f28-8c6b-4055-8962-653f17022f40)
 
 Virheen sain korjattua menemällä komentokehotteeseen järjestelmänvalvojana.
 Kehoitteeseen kirjoitettiin komento:
 ### bcdedit /set hypervisorlaunchtype off
+![Näyttökuva 2025-01-20 133335](https://github.com/user-attachments/assets/da011514-ea10-45de-a8b5-c80d23d68821)
+
 Tällä komennolla otettiin hypervision pois käytöstä
 Tämän jälkeen käynnistin koneen uudelleen ja avasin Virtual Boxin järjestelmänvalvojana.
 Virhe korjaantui.
@@ -60,11 +67,15 @@ https://www.youtube.com/watch?v=_aVzQ_qEfhc
 ### Virtuaalikoneen käynnistäminen ja testaus.
 Konetta käynnistäessä tuli virheilmoitus: "mount retry and boot"
 Minun piti valita Boot Menusta Live.
+![Näyttökuva 2025-01-20 134040](https://github.com/user-attachments/assets/db334f99-26ea-4375-8bc0-65910de440be)
+
 Reboottauksen jälkeen kone alkoi toimimaan ja valittiin menusta "Live system (amd64)
 Tämän jälkeen tietokone lähti toimimaan.
 
 ### Testaus
 Testasin Firefoxilla nettiä, joka toimi ja kirjoitin hakuun google.
+![Näyttökuva 2025-01-20 134317](https://github.com/user-attachments/assets/81ef223c-394b-4bd2-b982-62a12c361801)
+
 Tietokone totteli käskyjä, eli internet, hiiri ja näppäimistö toimii.
 
 ### Installer
@@ -75,6 +86,7 @@ Location/aikavyöhyke: Helsinki, Finland
 Keyboard: Finnish Keyboard (Default)
 Partitions sivu: Erase Disk, tämän voi valita koska virtuaalikoneella ei ollut tärkeitä tiedostoja minulle.
 Users: Käyttäjätunnus ja salasana
+![Näyttökuva 2025-01-20 134541](https://github.com/user-attachments/assets/0cb97ee6-660a-4514-a3d9-df2cb4670fa3)
 
 Asennuksen jälkeen käynnistin koneen uudelleen.
 Tarkistin asennuksen jälkeen, että löydän googlen.
