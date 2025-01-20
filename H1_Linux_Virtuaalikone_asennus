@@ -3,6 +3,32 @@
 ### Tiivistelmä omasta raportista
 Raportin tulisi olla toistettava, täsmällinen, helppolukuinen, viittaa lähteisiin, sisältää vakiotekstejä ja viitata mahdollisia pahoja mokia. 
 Yksinkertaisuudessaan raportin avulla, jonkun muun pitäisi pystyä toistaa sama minkä olet itse tehnyt.
-lähde: [https://terokarvinen.com/2006/raportin-kirjoittaminen-4/](https://terokarvinen.com/2006/raportin-kirjoittaminen-4/)
+lähde: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
 
 ### Free software definition/Neljä vapautta.
+Freedom 0: Vapaus käyttää ohjelmaa haluamallasi tavalla, mihin tahansa tarkoitukseen.
+Freedom 1: Vapaus tutkia ohjelmaa miten se toimii ja muokata sitä niin, että se vastaa tarpeitasi.
+Freedom 2: Vapaus levittää ohjelman kopioita, jotta voit auttaa muita.
+Freedom 3: Vapaus jakaa muokattuja versioita muilla, Koko yhteisö voi hyötyä muutoksista mitkä olet tehnyt.
+lähde: https://www.gnu.org/philosophy/free-sw.html
+
+## Debian 12 Asennus Oracle Virtual Boxiin.
+
+### Mitä tässä tehdään?
+Raportissa käydään läpi miten asennat Debian 12 Virtual Boxiin. Raportissa käydään myös läpi mahdollisia vikatilanteita.
+Asennuksen ja raportin päivämäärä on 20.01.2025
+
+#Tietokone
+Tietokone: Lenovo IdeaPad 3 16ITL6
+Käyttöjärjestelmä: Windows 11
+Suoritin: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz   2.42 GHz
+Asennettu RAM: 8,00Gt
+
+#### Debian ISO kuvan lataaminen
+Latasin ISO kuvan sivustolta https://www.debian.org/CD/live/
+Tässä tapauksessa valitsin xfc version.
+
+### Virtuaali koneen asentaminen, asetukset ja niiden valinta.
+Nimesin virtuaalikoneen "DebianMikoLiukkonen" 
+Valitsin ladatun ISO kuvan, joka löytyi ladatuista tiedostoista.
+Versioksi valitsin Debian (64-bit)
