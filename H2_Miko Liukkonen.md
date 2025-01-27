@@ -4,7 +4,7 @@
 Tämän raportin tarkoituksena on opetella Linuxin komentopäätteen peruskomennot. Raportti perustuu Linux-palvelimien kurssin H2 kotitehtävää.
 Linkki: https://terokarvinen.com/linux-palvelimet/
 
-## X Lue ja tiivistä Karvinen 2020: Command line basics revisited
+## Lue ja tiivistä Karvinen 2020: Command line basics revisited
 
 ### Liikkuminen ja tarkastelu
 `pwd` näyttää nykyisen työhakemiston.
@@ -92,6 +92,7 @@ Asensin curlin komennolla ´sudo apt install curl`
 Asennettu komenolla ´sudo apt install fzf´
 fzf tarjoaa nopean ja tehokkaan hakutoiminnon tiedostoille, komennoille ja muulle datalle. 
 Toimii komennolla fzf.
+
 ![image](https://github.com/user-attachments/assets/dc483c78-47f4-4603-bf01-70fe1982de73)
 
 ### Huomioita
@@ -107,4 +108,81 @@ Terminaalin oletusasetuksena on avata aina tämä kansio käynnistettäessä. Jo
 #### Huomio:
 Viikonpäivä ja eläin.txt oli tehty väärin 21.1.2025 tunnilla.
 
-###
+### /home
+Kotihakemistoon (/home/mikol) pääsin komennolla ´cd`. Komennolla `pwd` tarkistan, että olen todella siinä kansiossa, jossa tällä kertaa haluan olla.
+
+Seuraavaksi käytin komentoa `cd ..`, joka siirtää minut yhden tason ylemmäs hakemistorakenteessa. Näin päädyin /home-kansioon, joka on rakenteessa edellinen kansio.
+
+/home-hakemistosta löytyvät kaikkien käyttäjien kotikansiot. Koska virtuaalikoneessa on vain oma käyttäjäni, lista on suppea.
+
+![image](https://github.com/user-attachments/assets/cfedcb04-3b06-4881-92c4-7ec038fa4675)
+
+### / (root directory)
+Pääsin root directoriin samalla logiikalla aikaisemmin halusin "peruuttaa taakse päin" eli ´cd ..`
+Tämän jälkeeen kirjoitin komennon `pwd` joka tässä kohtaa avasi kaikki rootin kansiot. 
+Kirjoittamalla komennon `cd etc/` ja tämän jälkeen ´ls´ avasi asetukset.
+
+![image](https://github.com/user-attachments/assets/b94e7939-2478-4989-9c1b-effddb12655f)
+
+Suurin osa näistä kansioista on tyhjiä tai koskemattomia, koska virtuaalikoneelle ei ole tehty paljoa muutoksia.
+
+## The Friendly M. Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä.
+### Esimerkki 1
+Käytin komentoa grep -r ".txt" Oletin, että löytäisin aikasemman googlen txt-tiedoston jonka olin tallentanut curlin avulla ja se löytyi. Löytyi myös aikaisemmin mielestäni epäonnistunut rsync varmuuskopio tehtävästä A (positiivinen yllätys).
+
+![image](https://github.com/user-attachments/assets/c019b926-c5f8-4577-a0b8-d354b82dded7)
+
+### Esimerkki 2
+Käytin komentoa `ps aux | grep "nginx`. Käytin tätä, koska ChatGPT antoi sen vaihtoehdoksi kun käytti promptia " Näytä 2-3 kuvaavaa esimerkkiä grep-komennon käytöstä"
+
+![image](https://github.com/user-attachments/assets/e9722727-cb61-4e76-99a4-48ee3253862c)
+
+En tiennyt mitä numerot tarkoittavat ja mikä on nginx.
+#### 4863
+Tämä on PID tai prosessin tunnus.
+#### 0.0 (ensimmäinen)
+Tämä on prosenttuaalinen luku kuinka paljon prosessiresursseja (CPU) prosessi käyttää.
+Tässä tilanteessa 0% koska prosessi ei ole käynnissä vaan "unessa"
+#### 0.0 (toinen)
+Kuinka paljon muistia (RAM) prosessi käyttää prosentteina kokonaismuistista.
+#### 8996
+VSZ (Virtual Memory Size): Prosessin käyttämä virtuaalimuisti tavuina.
+Huom. Annettu numero on kilotavuina.
+#### 2199
+RSS (Resident Set Size): Prosessin fyysisesti käyttämän muistin koko tavuina.
+Tämäkin on annettu kilotavuina.
+#### pts/0
+pts/0 tarkoittaa, että prosessi on liitetty nykyiseen terminaali-istuntoon.
+#### S+
+Prosessin tila, joka on tässä nukkuva (S/sleeping) + tarkoittaa että prosessi on liitettynä nykyiseen terminaaliin.
+#### 21:41
+Kellon aika kun prosessi käynnistettiin.
+#### 0:00
+Prosessin CPU-aika.
+#### Nginx
+Nginx on avoin lähdekoodi jota voi käyttää muunmuassa erillaisina palvelimina.
+
+#### Huomioitavaa
+Linuxin putkitusmerkin (|) saa suomalaisella 80% näppäimistöllä painamalla oikea ALT ja <.
+
+## Esimerkki putkista
+"Putkittaminen tarkoittaa toisen ohjelman standarditulosteen ohjaamista toisen ohjelman standardisyötteelle" https://www.linux.fi/wiki/Putki
+ChatGPT kun pyysi helppoja linux putkia tuli esimerkki kuinka lasketaan tiedostojen määrän.
+Komennolla `ls | grep -c ""` Saadaan vastaukseksi 18, joka tarkoittaa että tällä hakemistolla on 18 tiedostoa.
+
+![image](https://github.com/user-attachments/assets/b6cdcd24-9060-41b0-a1aa-3edad23d0ec2)
+
+## Rauta 
+Minun piti ensin asentaa lshw komennolla `sudo apt install lshw`
+Tämän jälkeen ajoin komennon `sudo lshw -short`
+
+![image](https://github.com/user-attachments/assets/e6b6e5ac-5ef1-4e1e-b0b7-75a69a3b5535)
+
+Listaus koneen raudasta tuli.
+
+System: VirtualBox (virtuaalikone tietää olevansa virtuaalikone)
+Processor: 11th Gen Intel(R) Core(TM) i5-1135G7
+Memory: 4Gig (RAM)
+Disk: 66GB (Linux swap)
+
+Kysessä on virtuaalikone :D.
