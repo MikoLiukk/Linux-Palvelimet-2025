@@ -162,6 +162,8 @@ Prosessin CPU-aika.
 #### Nginx
 Nginx on avoin lähdekoodi jota voi käyttää muunmuassa erillaisina palvelimina.
 
+Nämä sai selville kun kirjoitti numerot samanlailla kuin ylemmässä kuvassa ChatGPT.
+
 #### Huomioitavaa
 Linuxin putkitusmerkin (|) saa suomalaisella 80% näppäimistöllä painamalla oikea ALT ja <.
 
