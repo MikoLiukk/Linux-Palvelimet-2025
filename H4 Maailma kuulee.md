@@ -31,10 +31,10 @@ Kirjautuminen toimii ssh avaimilla ja hostname on automaattisesti UpCloudin anta
 ### SSH avaimien luonti.
 Asensin ensin OpenSSH:n komennolla `sudo apt-get install openssh-client`
 Avainparin sain komennolla `ssh-keygen`
+
 ![image](https://github.com/user-attachments/assets/242199d7-9962-4a09-9287-1a1d22896057)
 
-
-
+Komennolla `cat ~/.ssh/id_rsa.pub` sain avainparini, jonka laitoin UpCloudin sivulle serveriä varten.
 
 ## B) Tulimuuri päälle, root tunnus kiinni ja ohjelmien päivitys
 
@@ -51,6 +51,9 @@ Tarkistin tämän jälkeen, että pääsenkö rootilla vielä palvelimelle (pä�
 
 Palvelimella annoin komennot `sudo adduser miko`tämän jälkeen annoin uuden salasanan, lisäsin käyttäjän miko sudo ryhmään ja varmuuden vuoksi admin ryhmään komennoilla:
 `sudo adduser miko sudo`ja `sudo adduser miko adm`
+![image](https://github.com/user-attachments/assets/334f34d3-77e8-401c-840d-fc507e259805)
+Huomio! Epäonnistuin ensimmäisen käyttäjän kanssa, jonka takia komennossa näkyy mikoli käyttäjänä eikä miko.
+
 
 SSH avaimien asetuksien kopiointi onnistui komennolla `sudo cp -rvn /root/.ssh/ /home/miko/ ja `sudo chown -R miko:miko /home/miko/`
 Poistuin ja uudelleen yhdistin palvelimelle `exit` ja `ssh miko@185.26.49.98`. 
@@ -58,6 +61,7 @@ Poistuin ja uudelleen yhdistin palvelimelle `exit` ja `ssh miko@185.26.49.98`.
 Rootin lukitseminen toimi komennoilla `sudo usermod --lock root` ja `sudo mv -nv /root/.ssh /root/DISABLED-ssh/`
 Tämän jälkeen poistuin palvelimelta ja kokeilin päästä sisälle root käyttäjällä, ei onnistunut eli tässä vaiheessa kaikki hyvin.
 Pääsin palvelimelle miko käyttäjällä.
+![image](https://github.com/user-attachments/assets/b5b4515c-97f3-4953-a5cd-8fe2b0dc9daf)
 
 ## C) Webbipalvelimen asennus.
 
@@ -73,14 +77,17 @@ Sivu näyttää tältä:
 Kokeilin sivua fyysisellä koneellani ja mobiililaitteella, kaikissa näyttää samalta.
 
 
-![image](https://github.com/user-attachments/assets/334f34d3-77e8-401c-840d-fc507e259805)
-
-![image](https://github.com/user-attachments/assets/b5b4515c-97f3-4953-a5cd-8fe2b0dc9daf)
 
 
 
 
 
-Lähteet: https://terokarvinen.com/linux-palvelimet/
+
+
+
+Lähteet:
+https://terokarvinen.com/linux-palvelimet/
+
 https://susannalehto.fi/2022/teoriasta-kaytantoon-pilvipalvelimen-avulla-h4/
+
 https://terokarvinen.com/2017/first-steps-on-a-new-virtual-private-server-an-example-on-digitalocean/
