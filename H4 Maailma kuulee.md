@@ -32,6 +32,7 @@ Kirjautuminen toimii ssh avaimilla ja hostname on automaattisesti UpCloudin anta
 Asensin ensin OpenSSH:n komennolla `sudo apt-get install openssh-client`
 Avainparin sain komennolla `ssh-keygen`
 
+![image](https://github.com/user-attachments/assets/3570658e-acb4-49f1-8985-5c6f01bc51b0)
 
 
 
@@ -63,17 +64,20 @@ Pääsin palvelimelle miko käyttäjällä.
 Asensin apachen komennolla `sudo apt-get -y install apache2`
 Tämän jälkeen vaihdoin testisivun johonkin muuhun komennolla echo "Hei kaikki" | sudo tee /var/www/html/index.html
 En tehnyt muita muutoksia.
+
+![image](https://github.com/user-attachments/assets/2b5c197b-39bd-4018-81ab-b762c34507ff)
+
+
 Sivu näyttää tältä:
 ![image](https://github.com/user-attachments/assets/96bec3c8-d0b7-4459-b2f4-a74dc780ac77)
 Kokeilin sivua fyysisellä koneellani ja mobiililaitteella, kaikissa näyttää samalta.
 
-![image](https://github.com/user-attachments/assets/3570658e-acb4-49f1-8985-5c6f01bc51b0)
 
 ![image](https://github.com/user-attachments/assets/334f34d3-77e8-401c-840d-fc507e259805)
 
 ![image](https://github.com/user-attachments/assets/b5b4515c-97f3-4953-a5cd-8fe2b0dc9daf)
 
-![image](https://github.com/user-attachments/assets/2b5c197b-39bd-4018-81ab-b762c34507ff)
+
 
 
 
