@@ -31,8 +31,8 @@ Kirjautuminen toimii ssh avaimilla ja hostname on automaattisesti UpCloudin anta
 ### SSH avaimien luonti.
 Asensin ensin OpenSSH:n komennolla `sudo apt-get install openssh-client`
 Avainparin sain komennolla `ssh-keygen`
+![image](https://github.com/user-attachments/assets/242199d7-9962-4a09-9287-1a1d22896057)
 
-![image](https://github.com/user-attachments/assets/3570658e-acb4-49f1-8985-5c6f01bc51b0)
 
 
 
@@ -45,7 +45,7 @@ Asensin ensimmäiseksi tulimuurin ja mahdolliset päivityksen komennoilla `sudo 
 Tämän jälkeen avasin portin 22 komennolla `sudo ufw allow 22/tcp` ja käynnistin muurin `sudo ufw enable`.
 Tarkistin tämän jälkeen, että pääsenkö rootilla vielä palvelimelle (pääsin).
 
-![image](https://github.com/user-attachments/assets/242199d7-9962-4a09-9287-1a1d22896057)
+![image](https://github.com/user-attachments/assets/3570658e-acb4-49f1-8985-5c6f01bc51b0)
 
 ### Käyttäjän luominen ja rootin poisto.'
 
