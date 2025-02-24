@@ -1,4 +1,4 @@
-# h5 Näkyviin
+# h5 Näkyviin 24.2.2025 klo 12:15
 
 ## a) Nimi. Laita julkinen nimi osoittamaan omaan koneeseesi.
 Käytin nimen vuokraamiseen "suomalaista" Zoner-palvelua. Nimi maksoi minulle 12€ + alv per vuosi. Vuokrasin nimen mikoliukkonen.com.
@@ -18,7 +18,8 @@ Kävin tämän jälkeen muokkaamassa host recordin seuraavaksi.
 Namecheapin kanssa minulla meni aikaa noin 10min.
 
 Testasin sivuston nettiselaimella ja aikaisempi tehty kotisivu löytyi.
-## b)  Based. Laita Name Based Virtual Host näkymään uudessa nimessäsi. Kotisvuja pitää pystyä muokkaamaan ilman pääkäyttäjän oikeuksia.
+## b)  Based. Laita Name Based Virtual Host näkymään uudessa nimessäsi. Kotisvuja pitää pystyä muokkaamaan ilman pääkäyttäjän oikeuksia. 15:00
 En ymmärtänyt tai osannut tätä tehtävän antoa. Yritin hakea apua muunmuasta videoilta https://www.youtube.com/watch?v=6Guk-lv7QJQ ja https://www.youtube.com/watch?v=x5fWSWdM4F8
 
-#
+Laitan tehtävät laksuun, koska en pääse itse eteenpäin 17:00
+
