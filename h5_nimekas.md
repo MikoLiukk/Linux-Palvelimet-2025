@@ -23,3 +23,6 @@ En ymmärtänyt tai osannut tätä tehtävän antoa. Yritin hakea apua muunmuast
 
 Laitan tehtävät laksuun, koska en pääse itse eteenpäin 17:00
 
+En pysty luomaan kansioita.
+![image](https://github.com/user-attachments/assets/7ae0a6b8-c313-4bf7-a294-d17c3740c084)
+
