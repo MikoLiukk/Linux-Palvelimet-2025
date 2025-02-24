@@ -24,3 +24,21 @@ En ymmärtänyt tai osannut tätä tehtävän antoa. Yritin hakea apua muunmuast
 Laitan tehtävät laksuun, koska en pääse itse eteenpäin 17:00
 
 17:10 Tämän ilmeisesti olen jo tehnyt edellisellä kotitehtävällä, kun käytin komentoa echo ´"Hei kaikki" | sudo tee /var/www/html/index.html´
+
+## c)  Kotisivu. Tee vähintään kolmen erillisen alasivun (esim. index.html, blog.html, projects.html) kotisivu ja kopioi se näkymään palvelimellesi.
+Sain apua muiden tehtävistä c kohdan tekimiseen. Kiitos linkin Petteri Pinkkilalle 
+https://github.com/pinkkila/linux-course/blob/main/tehtava-h5.md
+
+Tässä yiritin kirjottaa koodia index.html dokumenttiin, mutta ilmeisesti minulla ei ole oikeuksia pääkäyttäjänä.
+![image](https://github.com/user-attachments/assets/2974047a-2a6c-4e54-aacb-32ea6796b959)
+
+## d)  Alidomain. Tee kaksi uutta alidomainia, jotka osoittava omaan koneeseesi.
+![image](https://github.com/user-attachments/assets/fafa90b2-9547-4f38-8429-de2c61e1bdad)
+
+
+## e) Tutki jonkin nimen DNS-tietoja 'host' ja 'dig' -komennoilla.
+Kysyin chatGPT prompilla "mtiä "host" ja "dig" komennot tekevät linuxilla"
+Molemia käytetään DNS kyselyihin. Ne auttavat selvittämään verkkkotunnusten ja IP-osoitteiden tietoja.
+
+![image](https://github.com/user-attachments/assets/9210b2db-d36f-42df-8e41-dc5b557aa2bd)
+
