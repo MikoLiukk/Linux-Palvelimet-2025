@@ -8,3 +8,9 @@ Kun etsin muita mahdollisia palvelun tarjoajia, en päässyt sisään millekkä�
 ´sudo apt-get install ntpdate´ Tämä komento päivittäisi kelloni tulevaisuudessa automaattisesti. 
 
 Päädyin Namecheapin alle domainilla mikoliukkonen.it.com
+
+Kävin tämän jälkeen muokkaamassa host recordin seuraavaksi. 
+
+![image](https://github.com/user-attachments/assets/17932704-bbef-41d3-9320-6068de3e036a)
+
+Namecheapin kanssa minulla meni aikaa noin 10min.
