@@ -37,6 +37,9 @@ Tämän jälkeen tarkistin, ssl tiedoston ja käynnistin Apachen uudelleen.
 ![image](https://github.com/user-attachments/assets/67c61c43-b482-43fd-9310-977a77a590d2)
 
 Tämän jälkeen otin sites-enabled kansiosta ylimääräset kansiot pois ´a2dissite´ komennolla.
+![image](https://github.com/user-attachments/assets/42c0d7b5-26c1-411b-9587-3081af1011fd)
+
+
 
 ## b) A-rating. Testaa oma sivusi TLS jollain yleisellä laadunvarmistustyökalulla, esim. SSLLabs (Käytä vain tavanomaisia tarkistustyökaluja, ei tunkeutumistestausta eikä siihen liittyviä työkaluja)
 ![image](https://github.com/user-attachments/assets/c34e98e1-8d05-44a8-acaf-4d83f7e12100)
